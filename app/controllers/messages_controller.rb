@@ -20,6 +20,12 @@ class MessagesController < ApplicationController
    private
    
    def message_params
+<<<<<<< HEAD
     params.require(:message).permit(:content, :image).merge(user_id: current_user.id)
   end
 end
+=======
+     params.require(:message).permit(:content :image).merge(user_id: current_user.id)
+   end
+ end
+>>>>>>> parent of c4097ee (Revert "Active Storageの導入")
